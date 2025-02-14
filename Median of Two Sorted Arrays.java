@@ -28,5 +28,5 @@ public class Solution {
         }
     }
 }
-// Time: O(M + N)
-// Space: O(M + N)
+// Time: O(M + N) where M and N are the lengths of the input arrays
+// Space: O(M + N) where M and N are the lengths of the input arrays
