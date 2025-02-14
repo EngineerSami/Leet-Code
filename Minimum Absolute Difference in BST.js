@@ -8,20 +8,26 @@
  */
 /**
  * @param {TreeNode} root
- * @return {number[]}
+ * @return {number}
  */
-var preorderTraversal = function(root) {
+var getMinimumDifference = function(root) {
     const values = [];
     
-    const preOrder = (node) => {
+    const inOrder = (node) => {
         if (node == null) return;
-            values.push(node.val); 
-            preOrder(node.left);
-            preOrder(node.right);
-        };
+        inOrder(node.left);
+        values.push(node.val);
+        inOrder(node.right);
+    };
     
-    preOrder(root);
-    return values;
+    inOrder(root);
+    
+    let min = Infinity;
+    for (let i = 1; i < values.length; i++) {
+        min = Math.min(min, values[i] - values[i - 1]);
+    }
+    
+    return min;
 };
 // Time Complexity: O(n)
 // Space Complexity: O(n) 
