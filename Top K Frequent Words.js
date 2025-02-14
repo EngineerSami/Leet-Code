@@ -20,3 +20,5 @@ var topKFrequent = function(words, k) {
 
     return sortedWords.slice(0, k);
 }
+// Time Complexity: O(nlogn)
+// Space Complexity: O(n)
