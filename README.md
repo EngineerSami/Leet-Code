@@ -15,6 +15,21 @@ This repository contains solutions to various LeetCode problems, implemented in 
    - JavaScript: `node filename.js`
    - Java: `javac filename.java && java filename`
 
+## 📂 Folder Structure
+
+### 📄 File Count
+Total files: (Auto-updated)
+
+```
+leetcode-solutions/
+│-- Easy/
+│-- Medium/
+│-- Hard/
+│-- README.md
+```
+- `Easy/` - Solutions to easy problems
+- `Medium/` - Solutions to medium problems
+- `Hard/` - Solutions to hard problems
 
 ## 📚 Contributing
 Contributions are welcome! Follow these steps:
